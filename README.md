@@ -1,2 +1,2 @@
 # Open-NBS-VR
-The officall reposory for OpenNoteBlockStudioVR
+The official repository for OpenNoteBlockStudioVR!
