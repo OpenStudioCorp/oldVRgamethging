@@ -50,3 +50,17 @@ jobs:
         echo "$(date)" >> {{ github.workspace }}/last-trigger-times.tmp
         git log -1 --format="%H - %an - %s" --grep="GitBook: commit" >> {{ github.workspace }}/last-trigger-times.tmp
       shell: bash
+       
+       # Step 4: Merge temporary file to the main file
+    - name: Merge temporary file to the main file
+      # Merge the temporary file with the main file, keeping only the last 100 lines
+      run: |
+        if [ -f {{ github.workspace }}/last-trigger-times.tmp ]; then
+          if [ -f {{ github.workspace }}/last-trigger-times.txt ]; then
+            tail -n 99 {{ github.workspace }}/last-trigger-times.txt > {{ github.workspace }}/last-trigger-times.tmp
+            cat {{ github.workspace }}/last-trigger-times.tmp >> {{ github.workspace }}/last-trigger-times.txt
+            rm {{ github.workspace }}/last-trigger-times.tmp
+          else
+            mv {{ github.workspace }}/last-trigger-times.tmp {{ github.workspace }}/last-trigger-times.txt
+          fi
+        fi
