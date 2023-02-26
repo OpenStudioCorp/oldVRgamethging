@@ -48,11 +48,13 @@ jobs:
     - name: Merge temporary file to the main file
       # Merge the temporary file with the main file, keeping only the last 100 lines
       run: |
-        if [ -f last-trigger-times.txt ]; then
-          tail -n 99 last-trigger-times.txt > tmp-last-trigger-times.txt
-          cat tmp-last-trigger-times.txt >> last-trigger-times.txt
-          rm tmp-last-trigger-times.txt
-        else
-          mv tmp-last-trigger-times.txt last-trigger-times.txt
+        if [ -f tmp-last-trigger-times.txt ]; then
+          if [ -f last-trigger-times.txt ]; then
+            tail -n 99 last-trigger-times.txt > tmp-last-trigger-times.txt
+            cat tmp-last-trigger-times.txt >> last-trigger-times.txt
+            rm tmp-last-trigger-times.txt
+          else
+            mv tmp-last-trigger-times.txt last-trigger-times.txt
+          fi
         fi
       shell: bash
