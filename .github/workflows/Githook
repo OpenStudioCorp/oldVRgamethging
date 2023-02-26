@@ -38,14 +38,15 @@ jobs:
           const hasPush = pushes.some(push => push.commit.message.includes('GitBook: commit'));
           return { pr: hasPR, push: hasPush }
     # Step 3: Save last 100 trigger times
-    - name: Save last 100 trigger times
+ - name: Save last 100 trigger times
       # Only run this step if either a pull request or push has been made to the GitBook repository
-      touch last-trigger-times.tmp
       if: steps.gitbook-pr-push-check.outputs.pr == true || steps.gitbook-pr-push-check.outputs.push == true
-      # Save the current date and time to a temporary file
-      run: echo "$(date)" >> tmp-last-trigger-times.txt
-      shell: bash
-    - name: Merge temporary file to the main file
-      # Merge the temporary file with the main file, keeping only the last 100 lines
-      run: tail -n 100 tmp-last-trigger-times.txt > last-trigger-times.txt
+      # Save the current date and time to a temporary file in the same directory as last-trigger-times.txt
+      run: |
+        touch last-trigger-times.tmp
+        echo "GitHub $(date)" >> {{ github.workspace }}/last-trigger-times.tmp
+        git log -1 --format="%H - %an - %s" >> {{ github.workspace }}/last-trigger-times.tmp
+        echo "GitBook $(date)" >> {{ github.workspace }}/last-trigger-times.tmp
+        echo "$(date)" >> {{ github.workspace }}/last-trigger-times.tmp
+        git log -1 --format="%H - %an - %s" --grep="GitBook: commit" >> {{ github.workspace }}/last-trigger-times.tmp
       shell: bash
