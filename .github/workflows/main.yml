@@ -40,7 +40,7 @@ jobs:
     
     # Step 3: Save last 100 trigger times
      
-     name: Save last 100 trigger times
+    - name: Save last 100 trigger times
       # Only run this step if either a pull request or push has been made to the GitBook repository
       if: steps.gitbook-pr-push-check.outputs.pr == true || steps.gitbook-pr-push-check.outputs.push == true
       # Save the current date and time to a temporary file in the same directory as last-trigger-times.txt
