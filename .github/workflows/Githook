@@ -1,0 +1,51 @@
+name: GitBook PR and Push Check
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+jobs:
+  gitbook_check:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Step 1: Checkout code
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    # Step 2: Check for GitBook PR or push
+    - name: Check for GitBook PR or push
+      id: gitbook-pr-push-check
+      uses: actions/github-script@v4
+      with:
+        script: |
+          const { data: pullRequests } = await github.pulls.list({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            state: 'all',
+          });
+          const { data: pushes } = await github.repos.listCommits({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+          });
+          // Check if there's a pull request with a head repository that matches the GitBook repository name
+          const hasPR = pullRequests.some(pull => pull.head.repo.full_name === 'GITBOOK_REPO_NAME');
+          // Check if there's a commit with a message that includes the GitBook commit keyword
+          const hasPush = pushes.some(push => push.commit.message.includes('GitBook: commit'));
+          return { pr: hasPR, push: hasPush }
+    # Step 3: Save last 100 trigger times
+    - name: Save last 100 trigger times
+      # Only run this step if either a pull request or push has been made to the GitBook repository
+      touch last-trigger-times.tmp
+      if: steps.gitbook-pr-push-check.outputs.pr == true || steps.gitbook-pr-push-check.outputs.push == true
+      # Save the current date and time to a temporary file
+      run: echo "$(date)" >> tmp-last-trigger-times.txt
+      shell: bash
+    - name: Merge temporary file to the main file
+      # Merge the temporary file with the main file, keeping only the last 100 lines
+      run: tail -n 100 tmp-last-trigger-times.txt > last-trigger-times.txt
+      shell: bash
