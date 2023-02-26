@@ -1,23 +1,30 @@
-# Open-NBS-VR
-The official repository for OpenNoteBlockStudioVR!
+---
+description: what's all this about
+---
 
-Welcome to the plaza! we hope that you will like this place!
+# introduction To VR
 
-We are currently in the process of constructing buildings At the moment!
+Welcome to OpenNoteBlockStudioVR's official documentation
 
-you can check out the development progress with this progress bar that we quickly put together.
+<figure><img src=".gitbook/assets/image-6.png_1.png" alt=""><figcaption></figcaption></figure>
 
-[----------------------------------] for now it's empty as the work we have is not good enough for putting into the progress bar.
+Welcome to the main area.\
+This place is still being built so things may change.\
+\
+our wonderful helpers will try their best to get this place in top working condition.\
+\
+The pages on the left will help you traverse the job site but be careful as you may hurt yourself.
 
--------------------------------------------------------------------------------------------------------------------
+until this place is completed there may be documentation that is missing.
 
-links to all the repos that have helped make this, discord links, for all the servers that have helped out, and for the home place that created this, and for the helpers and devs that have contributed to this project 
+if you want to help out you can join the discord using the links at the bottom of the page\
+\
+\
+\
+\
+\
+\
 
-syembol: https://github.com/Syembol
-Charlie{me}: https://github.com/charlie-sans
 
-the official OpenNoteBlockStudio Discord: https://discord.gg/w35BqQp
--------------------------------------------------------------------------------------------------------------------
+{% embed url="https://discord.gg/w35BqQp" %}
 
-
-If you want to assist development of this DAW. you can join the discord using the link in the Links section of the readme
