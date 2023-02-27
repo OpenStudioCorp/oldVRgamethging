@@ -12,7 +12,7 @@ We are currently in the process of constructing buildings At the moment!
 
 you can check out the development progress with this progress bar that we quickly put together.
 
-\[----------------------------------] for now it's empty as the work we have is not good enough for putting into the progress bar.
+[----------------------------------] for now it's empty as the work we have is not good enough for putting into the progress bar.
 
 ***
 
