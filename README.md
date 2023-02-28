@@ -23,3 +23,13 @@ syembol: https://github.com/Syembol Charlie{me}: https://github.com/charlie-sans
 ## the official OpenNoteBlockStudio Discord: https://discord.gg/w35BqQp
 
 If you want to assist development of this DAW. you can join the discord using the link in the Links section of the readme
+
+Credits
+
+Charlie-san​ - Project leader
+
+Syembol ​    - Lead pixelart and sprite dev
+
+​Beatzoid    - Documentation and Github manager
+
+AlanVR      - community manager
