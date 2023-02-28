@@ -18,17 +18,15 @@ you can check out the development progress with this progress bar that we quickl
 
 links to all the repos that have helped make this, discord links, for all the servers that have helped out, and for the home place that created this, and for the helpers and devs that have contributed to this project
 
-syembol: https://github.com/Syembol Charlie{me}: https://github.com/charlie-sans
-
 ## the official OpenNoteBlockStudio Discord: https://discord.gg/w35BqQp
 
 If you want to assist development of this DAW. you can join the discord using the link in the Links section of the readme
 
 Credits
 
-Charlie-san​ - Project leader
+Charlie-san​  https://github.com/charlie-sans - Project leader
 
-Syembol ​    - Lead pixelart and sprite dev
+Syembol https://github.com/Syembol​    - Lead pixelart and sprite dev
 
 ​Beatzoid    - Documentation and Github manager
 
