@@ -1,7 +1,8 @@
 import tkinter as tk
 import os
 from tkinter import messagebox
-
+#This is the new launcher. it is in poor condition but if you want to help make it. 
+# just clone it and make a pull request
 # Define the functions to execute the batch scripts
 def script1():
     os.system('start 2.bat')

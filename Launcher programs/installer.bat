@@ -1,7 +1,7 @@
 import os
 
 # Replace this with the URL of the repository you want to clone
-repo_url = "https://github.com/Charlie-sans/Open-NBS-VR.git"
+repo_url = "https://github.com/opennbs-vr/Open-NBS-VR.git"
 
 # Get the current directory (where this script is located)
 current_dir = os.getcwd()
