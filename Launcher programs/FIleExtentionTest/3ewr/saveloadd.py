@@ -4,7 +4,7 @@ from Crypto.Cipher import AES
 from Crypto.Random import get_random_bytes
 import zlib
 
-KEY = b'mysecretpassword'
+KEY = b'97F6A9765747DA88'
 
 def save_file():
     data = input_text.get().encode()
