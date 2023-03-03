@@ -25,4 +25,4 @@ If you want to assist development of this DAW, you can join the discord using th
 
 [​Beatzoid](https://github.com/beatzoid) - Documentation and Github manager
 
-AlanVR      - community manager
+[​AlanVR](https://github.com/Alanek2012) - community manager
