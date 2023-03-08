@@ -1,5 +1,6 @@
 # Open-NBS-VR
-![]eriotgrit-1.png_1.gif
+![alt text](https://github.com/opennbs-vr/Open-NBS-VR/blob/main/eriotgrit-1.png_1.gif)
+
 The official repository for OpenNoteBlockStudioVR!
 
 Welcome to the plaza! We hope that you will like this place!
