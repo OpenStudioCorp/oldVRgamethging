@@ -6,7 +6,7 @@ def script1():
     os.system('start Installer.bat')
 
 def script2():
-    os.system('start Uninstaller/bat')
+    os.system('start Uninstaller.bat')
 
 def script3():
     os.system('start LaunchDesktop.bat')
