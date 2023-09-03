@@ -1,4 +1,16 @@
 # Open-NBS-VR
+
+# i'm soooo sorry for doing this but i must say it's been great doing this! 
+
+# for now i have to put this on indefininte hold... i know, it makes me sad too but i --charlie-- dont have the required skills and i just jumped in blind without learning how unity works.
+
+### maybe at somepoint in the future when we have more c# developers, we can make it again. this repo will still be here, may make some things for it, idk. we will see.
+
+have a great one!
+
+--charlie
+
+
 ![alt text](https://github.com/opennbs-vr/Open-NBS-VR/blob/main/eriotgrit-1.png_1.gif)
 
 The official repository for OpenNoteBlockStudioVR!
