@@ -1,22 +1,9 @@
 # Open-NBS-VR
 
-Still in development, dont worry. just really damn slow, still learning how we should do things
+Welcome to the Old repository for OpenNoteBlockStudioVR!
 
+we hope you have enjoyed this as much as we did, we are now located at [the new repo, you thought we would give up making this right??? hahaha NO](https://github.com/OpenStudio/OpenNoteBlockStudioVR-)
 
---charlie
-
-
-![alt text](https://github.com/opennbs-vr/Open-NBS-VR/blob/main/eriotgrit-1.png_1.gif)
-
-The official repository for OpenNoteBlockStudioVR!
-
-Welcome to the plaza! We hope that you will like this place!
-
-This repo is currently in beta so some things may be missing/incomplete
-
-you can check out the development progress with this progress bar that we quickly put together.
-
-[----------------------------------] for now it's empty as the work we have is not good enough for putting into the progress bar.
 
 
 # The Official OpenNoteBlockStudio Discord
